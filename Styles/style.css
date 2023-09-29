@@ -1,0 +1,16 @@
+:root{
+    --white: #ffffff;
+    --grey: #dfe4e5;
+    --light-green: #d4e9db;
+    --dark-green: #46aa64;
+    --blue: #0a3250;
+    --body-font: "Helvetica", "Arial", sans-serif;
+    --sier-font: 
+}
+
+html body{
+    width: 100%;
+    height: 350vh;
+}
+
+body
