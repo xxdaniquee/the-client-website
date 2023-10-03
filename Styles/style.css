@@ -18,6 +18,10 @@ body{
     grid-template-rows: auto 1fr auto;
 }
 
+/*  */
+/*  HEADER */
+/*  */
+
 Header{
     display: flex;
     justify-content: space-between;
@@ -48,7 +52,23 @@ Header{
     display: none;
 }
 
+/*  */
+/*  MAIN */
+/*  */
 
+
+
+
+/*  */
+/*  FOOTER */
+/*  */
+
+
+
+
+/*  */
+/* MEDIA */
+/*  */
 @media (min-width:41rem ) { 
     .menu-head{
         text-decoration: none;
