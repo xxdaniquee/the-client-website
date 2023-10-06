@@ -115,6 +115,8 @@ main .top{
     text-align: center;
     font-weight: 700;
     text-shadow: 4px 4px 4px var(--black);
+    padding-left: 0.5em;
+    padding-right: 0.5em;
 }
 
 /*  */
@@ -174,14 +176,14 @@ search button:hover{
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr repeat(3, 2fr); 
     grid-template-areas: 
-    'tekst tekst'
-    'content1 content2'
-    'content3 content4'
-    'content5 content6';
+    'text text'
+    'sport eten-drinken'
+    'leren kids'
+    'ontmoeten sport';
 } 
 
 .categorie p{ 
-    grid-area: tekst;
+    grid-area: text;
     text-align: center;
     margin-top: 2em; 
     color: var(--blue);
@@ -208,23 +210,23 @@ search button:hover{
     box-shadow: 2px 2px 2px 2px var(--black);
 } 
 
-.content1{ 
-    grid-area: content1;
+.sport{ 
+    grid-area: sport;
 }
-.content2{
-    grid-area: content2;
+.eten-drinken{
+    grid-area: eten-drinken;
 }
-.content3{
-    grid-area: content3;
+.leren{
+    grid-area: leren;
 }
-.content4{
-    grid-area: content4;
+.kids{
+    grid-area: kids;
 }
-.content5{
-    grid-area: content5;
+.ontmoeten{
+    grid-area: ontmoeten;
 }
-.content6{
-    grid-area: content6;
+.sport{
+    grid-area: sport;
 }
 
 /*  */
@@ -321,6 +323,11 @@ hr{
     text-align: right;
     margin-right: 1.5em;
     line-height: 0.5em;
+    margin-top: 5em;
+   }
+
+   .foot-contact img{
+    width: 8em;
    }
 
    .nav-foot{
@@ -328,10 +335,34 @@ hr{
     margin-left: 1.5em;
    }
 
+   hr{
+    width: 100%;
+    align-items: left;
+   }
+
+
 }
 
 @media (min-width:63rem ) { 
     .top h1{
         font-size: 3em;
+    }
+
+    .categorie{ 
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr repeat(2, 2fr); 
+        grid-template-areas: 
+        'text text text'
+        'cultuur eten-drinken leren'
+        'kids ontmoeten sport';
+    } 
+
+    .content-foto{
+        width: 400px;
+    }
+
+    .content-link{
+        font-size: 1.2em;
     }
 }
