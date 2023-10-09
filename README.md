@@ -1,16 +1,23 @@
-> _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je, zoals altijd, in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
-
 # Opdracht De Hallen
-<!-- Geef je project een titel en schrijf in één zin wat het is -->
+
 
 ## Inhoudsopgave
 
   * [Beschrijving](#beschrijving)
   * [Kenmerken](#kenmerken)
+  *  [Debriefing](#debriefing)
   * [Bronnen](#bronnen)
-  * [Licentie](#licentie)
 
-# Debriefing - Buurtinitiatieven Amsterdam Oud- West
+## Beschrijving
+De hallen wil meer kunnen betekenen voor hun buurt. Daarom willen zij een online platform, vanuit de nieuwe stichting, waar de buurtinitiatieven worden uitgelicht. Een platform waarbij vraag en aanbod uit de buurt makkelijker met elkaar kunnen verbinden en waarbij die vraag en aanbod ook uitbereid kan worden.
+
+Userstory: <br>
+Als buurtbewoner van Amsterdam west wil ik een overzicht van alle buurtinitiatieven kunnen bekijken, zodat ik een indruk kan krijgen van wat er allemaal te doen is in de wijk.
+## Debriefing - Buurtinitiatieven Amsterdam Oud- West
+
+## Kenmerken
+
+## Debriefing
 
 Opdracht van Danique Rijsdijk
 
@@ -54,3 +61,4 @@ De bewoners uit Amsterdam oud- west. De buurtinitiatieven en hun gebruikers uit 
 ### Relatie met andere projecten
 Het platform wordt onderdeel van een nieuwe stichting voor buurtinitiatieven uit oud- west. Deze stichting in onderdeel van de hallen.
 
+## Bronnen
