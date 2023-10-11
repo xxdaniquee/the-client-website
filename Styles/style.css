@@ -8,6 +8,13 @@
     --black: #111111;
 }
 
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
 html body{
     width: 100%;
     height: 100vh;
@@ -18,6 +25,7 @@ body{
     flex-direction: column;
     justify-content: baseline;
     width: 100%;
+    height: 100%;
     font-family: 'Roboto', sans-serif;
     transition: all 0.5s ease;
 }
@@ -171,62 +179,92 @@ search button:hover{
 /*  */
 /*  */
 
-.categorie{ 
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr repeat(3, 2fr); 
-    grid-template-areas: 
-    'text text'
-    'sport eten-drinken'
-    'leren kids'
-    'ontmoeten sport';
-} 
-
-.categorie p{ 
-    grid-area: text;
-    text-align: center;
-    margin-top: 2em; 
-    color: var(--blue);
+.head-text{
     font-size: 1.5em;
-    font-weight: 600;
-} 
-
-.content-link{
-    text-decoration: none;
-    position: relative;
-    top: -20%; 
     color: var(--blue);
-    font-weight: 500;
+    margin-top: 2em;
+    margin-bottom: 2.5em;
+    font-weight: 600;
     text-align: center;
-} 
+}
+
+.category{
+    display: grid;
+    width: 80rem;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr;
+    align-items: center;
+    padding-left: 100px;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+.card{
+    width: 24rem;
+    height: 36rem;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    color: var(--blue);
+    box-shadow: 0 10px 30px 5px var(--grey);
+}
 
 .content-foto{
-    width: 200px;
-    height: 250px;
-    opacity: 0.5;
-    align-items: center;
-    margin-left: 1.5em;
-    border-radius: 1em;
-    box-shadow: 2px 2px 2px 2px var(--black);
-} 
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+    transition: opacity .2s ease-out;
+}
 
-.sport{ 
-    grid-area: sport;
+.content-head{
+    position: absolute;
+    inset: auto auto 30px 30px;
+    margin: 0;
+    transition: inset .3s .3s ease-out;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
 }
-.eten-drinken{
-    grid-area: eten-drinken;
+
+.content-text, .content-link{
+    position: absolute;
+    opacity: 0;
+    max-width: 80%;
+    transition: opacity .3s ease-out;
 }
-.leren{
-    grid-area: leren;
+
+.content-text{
+    inset: auto auto 80px 30px;
 }
-.kids{
-    grid-area: kids;
+
+.content-link{
+    inset: auto auto 40px 30px;
+    color: inherit;
+    text-decoration: none;
 }
-.ontmoeten{
-    grid-area: ontmoeten;
+
+.content-head:hover{
+    inset: auto auto 220px 30px;
+    transition: inset .3s ease-out;
 }
-.sport{
-    grid-area: sport;
+
+.content-text:hover, .content-link:hover{
+    opacity: 1;
+    transition: opacity .5s .1s ease-in;
+}
+
+.content-foto:hover{
+    transition: opacity .3s ease-in;
+    opacity: 0.3;
+}
+
+.symbol{
+    vertical-align: middle;
 }
 
 /*  */
@@ -248,7 +286,7 @@ footer{
 }
 
 .nav-foot li{
-    margin: 15px 0;
+    margin: 5px 0;
 }
 
 .nav-foot a{
@@ -260,10 +298,11 @@ footer{
     text-decoration: underline;
 }
 
-.foot-contact{
+.foot-hallen{
     margin-top: 2em;
     text-align: center;
     font-weight: 500;
+    margin-bottom: 1em;
 }
 
 .foot-contact img{
@@ -282,6 +321,8 @@ hr{
 /*  */
 /* MEDIA */
 /*  */
+
+
 @media (min-width:42rem ) { 
     .top h1{
         font-size: 2.5em;
@@ -292,31 +333,26 @@ hr{
     }
 
     search input{
-    padding: 15px;
-    width: 100%;
-    max-width: 400px;
-    border: 2px solid var(--dark-green);
-    border-radius: 5px;
-    font-size: 1.2em;
-    margin-bottom: 1em;
+        max-width: 400px;
+        font-size: 1.2em;
+        margin-bottom: 1em;
     }
 
     search button{
         font-size: 2em;
     }
 
-    .categorie p{ 
-        font-size: 1.7em;
-    } 
-
-    .content-foto{
-        width: 300px;
+    
+    .category{ 
+        grid-template-columns: repeat(2, 1fr);
+        width: 40rem;
+        padding-left: 2rem;
     } 
 
    footer{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
    }
 
    .foot-contact{
@@ -336,26 +372,20 @@ hr{
    }
 
    hr{
-    width: 100%;
-    align-items: left;
+    width: 10%;
    }
 
-
 }
+
 
 @media (min-width:63rem ) { 
     .top h1{
         font-size: 3em;
     }
 
-    .categorie{ 
-        display: grid;
+    .category{ 
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1fr repeat(2, 2fr); 
-        grid-template-areas: 
-        'text text text'
-        'cultuur eten-drinken leren'
-        'kids ontmoeten sport';
+        grid-column-gap: 7rem;
     } 
 
     .content-foto{
@@ -365,4 +395,6 @@ hr{
     .content-link{
         font-size: 1.2em;
     }
+
+    
 }
