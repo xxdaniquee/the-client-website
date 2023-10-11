@@ -5,7 +5,7 @@
 
   * [Beschrijving](#beschrijving)
   * [Kenmerken](#kenmerken)
-  *  [Debriefing](#debriefing)
+  * [Debriefing](#debriefing)
   * [Bronnen](#bronnen)
 
 ## Beschrijving
@@ -16,6 +16,7 @@ Als buurtbewoner van Amsterdam west wil ik een overzicht van alle buurtinitiatie
 ## Debriefing - Buurtinitiatieven Amsterdam Oud- West
 
 ## Kenmerken
+Deze website is gemaakt met HTML en CSS.
 
 ## Debriefing
 
@@ -62,3 +63,6 @@ De bewoners uit Amsterdam oud- west. De buurtinitiatieven en hun gebruikers uit 
 Het platform wordt onderdeel van een nieuwe stichting voor buurtinitiatieven uit oud- west. Deze stichting in onderdeel van de hallen.
 
 ## Bronnen
+* https://dehallen-amsterdam.nl/
+* https://developer.mozilla.org/en-US/
+* https://htmlcheatsheet.com/css/
